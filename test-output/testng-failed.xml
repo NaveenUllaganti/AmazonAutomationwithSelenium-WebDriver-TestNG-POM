@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Amazon Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Sanity Tests(failed)">
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.amazon.action.tests.TestPage">
+        <methods>
+          <include name="testSearchBoxClear"/>
+          <include name="testSearchBoxIsDisplayed"/>
+          <include name="testAmazonLogoIsDisplayed"/>
+        </methods>
+      </class> <!-- com.amazon.action.tests.TestPage -->
+    </classes>
+  </test> <!-- Sanity Tests(failed) -->
+  <test thread-count="5" name="Regression Tests(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.amazon.action.tests.TestPage">
+        <methods>
+          <include name="testSearchFunctionality"/>
+          <include name="testGoToTodaysDeals"/>
+          <include name="testDoubleClickSearchBox"/>
+          <include name="testSearchItem"/>
+        </methods>
+      </class> <!-- com.amazon.action.tests.TestPage -->
+    </classes>
+  </test> <!-- Regression Tests(failed) -->
+  <test thread-count="5" name="Logo Tests(failed)">
+    <groups>
+      <run>
+        <include name="logo"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.amazon.action.tests.TestPage">
+        <methods>
+          <include name="testAmazonLogoIsDisplayed"/>
+        </methods>
+      </class> <!-- com.amazon.action.tests.TestPage -->
+    </classes>
+  </test> <!-- Logo Tests(failed) -->
+  <test thread-count="5" name="Combined Search and Sanity Tests(failed)">
+    <groups>
+      <run>
+        <include name="search"/>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.amazon.action.tests.TestPage">
+        <methods>
+          <include name="testSearchFunctionality"/>
+          <include name="testSearchBoxClear"/>
+          <include name="testDoubleClickSearchBox"/>
+          <include name="testAmazonLogoIsDisplayed"/>
+          <include name="testSearchBoxIsDisplayed"/>
+          <include name="testSearchItem"/>
+        </methods>
+      </class> <!-- com.amazon.action.tests.TestPage -->
+    </classes>
+  </test> <!-- Combined Search and Sanity Tests(failed) -->
+  <test thread-count="5" name="Combined Search and Regression Tests(failed)">
+    <groups>
+      <run>
+        <include name="search"/>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.amazon.action.tests.TestPage">
+        <methods>
+          <include name="testSearchFunctionality"/>
+          <include name="testGoToTodaysDeals"/>
+          <include name="testSearchBoxClear"/>
+          <include name="testSearchBoxIsDisplayed"/>
+          <include name="testDoubleClickSearchBox"/>
+          <include name="testSearchItem"/>
+        </methods>
+      </class> <!-- com.amazon.action.tests.TestPage -->
+    </classes>
+  </test> <!-- Combined Search and Regression Tests(failed) -->
+  <test thread-count="5" name="All Tests(failed)">
+    <classes>
+      <class name="com.amazon.action.tests.TestPage">
+        <methods>
+          <include name="testSearchFunctionality"/>
+          <include name="testGoToTodaysDeals"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testSearchBoxClear"/>
+          <include name="testAmazonLogoIsDisplayed"/>
+          <include name="testDoubleClickSearchBox"/>
+        </methods>
+      </class> <!-- com.amazon.action.tests.TestPage -->
+    </classes>
+  </test> <!-- All Tests(failed) -->
+</suite> <!-- Failed suite [Amazon Test Suite] -->

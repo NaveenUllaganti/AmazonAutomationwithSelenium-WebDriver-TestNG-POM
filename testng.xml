@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon Test Suite" verbose="1">
+    
+    <test name="Sanity Tests">
+        <groups>
+            <run>                           
+                <include name="sanity"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.amazon.action.tests.TestPage"/>
+        </classes>
+    </test>
+
+    <test name="Regression Tests">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.amazon.action.tests.TestPage"/>
+        </classes>
+    </test>
+
+    <test name="Logo Tests">
+        <groups>
+            <run>
+                <include name="logo"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.amazon.action.tests.TestPage"/>
+        </classes>
+    </test>
+
+    <test name="Combined Search and Sanity Tests">
+        <groups>
+            <run>
+                <include name="search"/>
+                <include name="sanity"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.amazon.action.tests.TestPage"/>
+        </classes>
+    </test>
+
+    <test name="Combined Search and Regression Tests">
+        <groups>
+            <run>
+                <include name="search"/>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.amazon.action.tests.TestPage"/>
+        </classes>
+    </test>
+
+    <test name="All Tests">
+        <classes>
+            <class name="com.amazon.action.tests.TestPage"/>
+        </classes>
+    </test>
+</suite>
